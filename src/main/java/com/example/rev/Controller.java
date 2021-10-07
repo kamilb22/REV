@@ -9,6 +9,6 @@ public class Controller {
 
     @RequestMapping("/{value}")
     public String reverse(@PathVariable String value) {
-        return "";
+        return new StringBuilder(value).reverse().toString();
     }
 }
